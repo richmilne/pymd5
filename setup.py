@@ -2,8 +2,9 @@
 from setuptools import setup
 
 def readme():
-    with open('README.rst') as f:
-        return f.read()
+    """Use text contained in README.rst as long description."""
+    with open('README.rst') as desc:
+        return desc.read()
 
 
 setup(name='pymd5',
@@ -16,8 +17,16 @@ setup(name='pymd5',
       author_email='richmilne@hotmail.com',
       license='MIT',
       packages=['pymd5'],
+      include_package_data=True,
       entry_points={
           'console_scripts': ['pymd5=pymd5:_read_args']
       },
-      include_package_data=True,
+      classifiers=[
+          'Development Status :: 4 - Beta',
+          'Environment :: Console',
+          'License :: OSI Approved :: MIT License',
+          'Operating System :: POSIX',
+          'Programming Language :: Python :: 2',
+          'Programming Language :: Python :: 3',
+      ],
      )
