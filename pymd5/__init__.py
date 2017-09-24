@@ -70,10 +70,4 @@ def _read_args():
                         help="Hash all files rooted in this directory.")
 
     args = parser.parse_args()
-    return args.DIRPATH
-
-
-if __name__ == '__main__':
-
-    DIRPATH = _read_args()
-    calculate_hashes(DIRPATH)
+    calculate_hashes(args.DIRPATH)
