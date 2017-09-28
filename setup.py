@@ -12,7 +12,7 @@ setup(name='pymd5',
       description=('Recursively calculate and display MD5 file hashes '
                    'for all files rooted in a directory.'),
       long_description=readme(),
-      url='https://github.com/richmilne/pymd5',
+      url='https://github.com/richmilne/pymd5/releases/tag/v0.1',
       author='Richard Milne',
       author_email='richmilne@hotmail.com',
       license='MIT',
